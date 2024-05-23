@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="dashboard">
+                <h1>Social Media Dashboard</h1>
+                <p>total followers 23,004</p>
+            </div>
+            <div class="theme">
+                <span>dark theme</span>
+                <label class="switch">
+                    <label for="theme-toggle"></label>
+                    <input type="checkbox" id="theme-toggle">
+                    c
+                    
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+        <main class="main-content">
+            <div class="social-container">
+                <div class="social" id="facebook">
+                    <div class="header">
+                        <img src="./images/icon-facebook.svg" alt="">
+                        <span>@nathanf</span>
+                    </div>
+                    <div class="followers">
+                        <h2 id="fb-followers"></h2>
+                        <p>followers</p>
+                    </div>
+                    <div class="position">
+                        <span>
+                            <img src="./images/icon-up.svg" alt="">
+                            +12 today
+                        </span>
+                    </div>
+                </div>
+                <div class="social" id="twitter">
+                    <div class="header">
+                        <img src="./images/icon-twitter.svg" alt="">
+                        <span>@nathanf</span>
+                    </div>
+                    <div class="followers">
+                        <h2 id="twitter-followers"></h2>
+                        <p>followers</p>
+                    </div>
+                    <div class="position">
+                        <span>
+                            <img src="./images/icon-up.svg" alt="">
+                            +99 today
+                        </span>
+                    </div>
+                </div>
+                <div class="social" id="instagram">
+                    <div class="header">
+                        <img src="./images/icon-instagram.svg" alt="">
+                        <span>@realnathanf</span>
+                    </div>
+                    <div class="followers">
+                        <h2 id="instagram-followers"></h2>
+                        <p>followers</p>
+                    </div>
+                    <div class="position">
+                        <span>
+                            <img src="./images/icon-up.svg" alt="">
+                            +1099 today
+                        </span>
+                    </div>
+                </div>
+                <div class="social" id="youTube">
+                    <div class="header">
+                        <img src="./images/icon-youtube.svg" alt="">
+                        <span>nathan f</span>
+                    </div>
+                    <div class="followers">
+                        <h2 id="youTube-subscribers"></h2>
+                        <p>subscribers</p>
+                    </div>
+                    <div class="position red" >
+                        <span id="red">
+                            <img src="./images/icon-down.svg" alt="">
+                            -144 today
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <h5>Overview - Today</h5>
+        <div class="overview-container">
+            <div class="board">
+            <div class="views">
+                <p>page views</p>
+                <h2>87</h2>
+            </div>
+            <div class="percent">
+                <img src="./images/icon-facebook.svg" alt="">
+                <p>
+                <img src="./images/icon-up.svg" alt="">
+                    +3%</p>
+            </div>
+        </div>
+        <div class="board">
+            <div class="views">
+                <p>likes</p>
+                <h2>52</h2>
+            </div>
+            <div class="percent" id="red">
+                <img src="./images/icon-facebook.svg" alt="">
+                <p>
+                    <img src="./images/icon-down.svg" alt="">
+                    -2%
+                </p>
+            </div>
+        </div>
+        <div class="board">
+            <div class="views">
+                <p>likes</p>
+                <h2>5462</h2>
+            </div>
+            <div class="percent">
+                <img src="./images/icon-instagram.svg" alt="">
+                <p>
+                    <img src="./images/icon-up.svg" alt="">
+                    +2257%
+                </p>
+            </div>
+        </div>
+        <div class="board">
+            <div class="views">
+                <p>profile view</p>
+                <h2>52K</h2>
+            </div>
+            <div class="percent">
+                <img src="./images/icon-instagram.svg" alt="">
+                <p>
+                    <img src="./images/icon-up.svg" alt="">
+                    +1375%
+                </p>
+            </div>
+        </div>
+             <div class="board">
+            <div class="views">
+                <p>retweets</p>
+                <h2>117</h2>
+            </div>
+            <div class="percent">
+                <img src="./images/icon-twitter.svg" alt="">
+                <p>
+                    <img src="./images/icon-up.svg" alt="">
+                    +303%
+                </p>
+            </div>
+        </div>
+        <div class="board">
+            <div class="views">
+                <p>likes</p>
+                <h2>507</h2>
+            </div>
+            <div class="percent">
+                <img src="./images/icon-twitter.svg" alt="">
+                <p>
+                    <img src="./images/icon-up.svg" alt="">
+                    +553%
+                </p>
+            </div>
+            </div>
+            <div class="board">
+            <div class="views">
+                <p>likes</p>
+                <h2>107</h2>
+            </div>
+            <div class="percent" id="red">
+                <img src="./images/icon-youtube.svg" alt="">
+                <p>
+                    <img src="./images/icon-down.svg" alt="">
+                    -19%
+                </p>
+            </div>
+        </div>
+        <div class="board">
+            <div class="views">
+                <p>total views</p>
+                <h2>1407</h2>
+            </div>
+            <div class="percent" id="red">
+                <img src="./images/icon-youtube.svg" alt="">
+                <p>
+                    <img src="./images/icon-down.svg" alt="">
+                    -12%
+                </p>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

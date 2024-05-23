@@ -1,0 +1,25 @@
+{
+    "socialMediaStats": {
+      "instagram": {
+        "followers": "11K",
+        "profileViews": "52K",
+        "likes": 5462
+      },
+      "facebook": {
+        "followers": 12228,
+        "pageViews": 87,
+        "likes": 52
+      },
+      "youTube": {
+        "subscribers": 8239,
+        "totalViews": 1407,
+        "likes": 107
+      },
+      "twitter": {
+        "followers": 1044,
+        "retweets": 117,
+        "likes": 507
+      }
+    }
+  }
+  
