@@ -1,20 +1,17 @@
-const fetchData =() => {
-    fetch('http://localhost:3000/socialMediaStats')
-    .then(response => response.json())
-    .then(data => {
-        const fb = document.getElementById('fb-followers');
-        const fbFollowers = data.facebook.followers;
-        fb.innerText = fbFollowers;
-        const twitter = document.getElementById('twitter-followers');
-        const twitterFollowers = data.twitter.followers;
-        twitter.innerText = twitterFollowers;
-        const instagram = document.getElementById('instagram-followers');
-        const instagramFollowers = data.instagram.followers;
-        instagram.innerText = instagramFollowers;
-        const youTube = document.getElementById('youTube-subscribers');
-        const youTubeSubscribers = data.youTube.subscribers;
-        youTube.innerText = youTubeSubscribers;
-    })
-}
-    fetchData();
-
+document.addEventListener('DOMContentLoaded', () => {
+    fetch('db.json')
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('fb-followers').innerText = data.facebook.followers;
+            document.getElementById('twitter-followers').innerText = data.twitter.followers;
+            document.getElementById('instagram-followers').innerText = data.instagram.followers;
+            document.getElementById('youTube-subscribers').innerText = data.youTube.subscribers;
+        })
+        .catch(error => console.error('Error fetching data:', error));
+    
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('change', () => {
+        document.body.classList.toggle('dark-mode');
+    });
+});
+fetchData();
